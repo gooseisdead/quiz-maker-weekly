@@ -8,17 +8,17 @@
 
             answerArray.push(
               `<label class="answer-container">
-              <input type="radio" class="radio" name="question${questionNumber}" value="${letter}">
-              <span class="checkmark"></span>${listQuestion.answers[letter]}
+                  <input type="radio" class="radio" name="question${questionNumber}" value="${letter}">
+                  <span class="checkmark"></span>${listQuestion.answers[letter]}
               </label>`
             );
           }
 
             quizBoard.push(
               `<div class="question-card">
-                <div class="category"> ${listQuestion.category} </div>
-                <div class="question"> ${listQuestion.question} </div>
-                <div class="answers"> ${answerArray.join('')} </div>
+                  <div class="category"> ${listQuestion.category} </div>
+                  <div class="question"> ${listQuestion.question} </div>
+                  <div class="answers"> ${answerArray.join('')} </div>
               </div>`
             );
         }
