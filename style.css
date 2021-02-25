@@ -190,6 +190,8 @@ button:hover{
 
 .checkmark:after {
     content: "🍺";
+    margin-top: -5px;
+    zoom: 150%;
     position: relative;
     display: none;
 }
