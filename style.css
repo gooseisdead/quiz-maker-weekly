@@ -1,17 +1,18 @@
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
-    color:rgb(252, 249, 250);
+    background: #d8a96b;
     letter-spacing: 0.02em;
     text-align: center;
 }
 
 h1 {
-    display: flex;
+    /* display: flex; */
+    position:relative;
     justify-content: center;
     color: black;
     background-color: rgb(252, 249, 250);
-    height: 48px;
+    height: auto;
     width: auto;
     margin-left: 285px;
     margin-right: 285px;
@@ -20,13 +21,16 @@ h1 {
 }
 
 .category {
-    color: black;
-    font-size: 18px;
-    font-family: cursive;
+    background: #e4be56;
+    border-radius: 8px;
+    font-size: 23px;
+    font-display: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: underline;
 }
 
 .question {
+    color: rgb(8, 8, 8);
     font-size: 20px;
     font-weight: bolder;
     margin-bottom: 3px;
@@ -34,6 +38,7 @@ h1 {
 }
 
 .answers {
+    color:rgb(17, 17, 16);
     text-align: left;
     display: inline-block;
 }
@@ -68,7 +73,6 @@ button:hover{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding: 3px;
 }
 
 .quiz {
@@ -76,55 +80,62 @@ button:hover{
     padding: 1px;
     width: stretch;
     height: auto;
-    background: #cccac9;
+    background-image: url("https://images.all-free-download.com/images/graphiclarge/a_glass_of_beer_closeup_picture_167081.jpg");
+    background-size: 1200px;
+    background-position-y: -380px;
     opacity: .8;
 }
 
 .question-card {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     color:rgb(15, 14, 15);
     background-color: rgb(252, 249, 250);
+    background-image: url("https://images.all-free-download.com/images/graphiclarge/a_glass_of_beer_closeup_picture_167081.jpg");
+    background-size: 600px;
+    background-position-y: -10px;
     display: inline-block;
     position: relative;
     margin-right: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
     border: 1px black solid;
-    height: 200px;
+    height: 208px;
     width: 300px;
     box-shadow: 6px 3px rgb(48, 49, 48);
     border-radius: 10px;
 }
 
 .correct-answer {
+    color:rgb(252, 249, 250);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     display: inline-block;
     position: relative;
     margin-right: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
     border: 2px black solid;
-    height: 200px;
+    height: 208px;
     width: 300px;
-    box-shadow: 9px 6px rgb(34, 138, 34);
+    box-shadow: 6px 3px rgb(48, 49, 48);
     background-color: rgb(99, 180, 17);
     border-radius: 10px;
 }
 
 .wrong-answer {
+    color:rgb(252, 249, 250);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     display: inline-block;
     position: relative;
     margin-right: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
     border: 2px black solid;
-    height: 200px;
+    height: 208px;
     width: 300px;
-    box-shadow: 9px 6px rgb(167, 3, 38);
+    box-shadow: 6px 3px rgb(48, 49, 48);
     background-color: rgb(226, 26, 59);
     border-radius: 10px;
 }
@@ -133,7 +144,82 @@ button:hover{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 55px;
     font-display: bold;
-    color: rgb(15, 14, 15);
+    position:relative;
+    justify-content: center;
+    color: black;
+    background-color: rgb(252, 249, 250);
+    height: auto;
+    width: auto;
+    margin-left: 285px;
+    margin-right: 285px;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.answer-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ /* Hide the browser's default radio button */
+ .answer-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+  }
+  
+  .answer-container:hover input ~ .checkmark {
+    content: "🍺";
+    background-color: #f7ae41;
+  }
+ 
+  .checkmark:after {
+    content: "🍺";
+    position: relative;
+    display: none;
+  }
+
+  .answer-container input:checked ~ .checkmark:after {
+    display:block;
+  }
+
+  .answers-after {
+    color:rgb(253, 252, 250);
+    text-align: left;
+    display: inline-block;
+}
+
+.answers-after label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.category-after {
+    background: #fdfcfa;
+    border-radius: 5px;
+    font-size: 23px;
+    color:rgb(8, 8, 8);
+    font-display: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
 }
 
 

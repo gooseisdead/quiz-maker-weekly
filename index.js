@@ -7,9 +7,9 @@
           for (letter in listQuestion.answers){
 
             answerArray.push(
-              `<label>
-                <input type="radio" class="radio" name="question${questionNumber}" value="${letter}">
-                ${listQuestion.answers[letter]}
+              `<label class="answer-container">
+              <input type="radio" class="radio" name="question${questionNumber}" value="${letter}">
+              <span class="checkmark"></span>${listQuestion.answers[letter]}
               </label>`
             );
           }
@@ -32,6 +32,8 @@
 
       quizQuestions.forEach( (listQuestion, questionNumber) => {
         const questionCard = document.querySelector('.question-card')
+        const answersAfter = document.querySelector('.answers')
+        const categoryAfter = document.querySelector('.category')
         const answerContainer = answerContainers[questionNumber];
         const selector = `input[name=question${questionNumber}]:checked`;
         const userAnswer = (answerContainer.querySelector(selector) || {}).value;
@@ -39,8 +41,12 @@
         if(userAnswer === listQuestion.correctAnswer){
           numCorrect++;
           questionCard.className = "correct-answer"
+          answersAfter.className = "answers-after"
+          categoryAfter.className = "category-after"
         } else {
           questionCard.className = "wrong-answer"
+          answersAfter.className = "answers-after"
+          categoryAfter.className = "category-after"
         }
       });
 
