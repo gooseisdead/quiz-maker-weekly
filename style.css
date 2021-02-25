@@ -1,0 +1,141 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    color:rgb(252, 249, 250);
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(25, 30, 32);
+    height: 48px;
+    width: auto;
+    margin-left: 135px;
+    margin-right: 135px;
+    border-radius: 15px;
+}
+
+.category {
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+
+.answers {
+    margin-bottom: 2px;
+    text-align: left;
+    display: inline-block;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 22px;
+	border-style:solid;
+    border-color: black;
+	border-radius: 15px;
+	padding: 8px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+button:hover{
+    color:rgb(252, 249, 250);
+    border-style: 300px;
+    border-color: rgb(223, 216, 216);
+	background-color: rgb(18, 20, 20);
+}
+
+.quiz-container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 3px;
+}
+
+.quiz {
+    text-align: center;
+    padding: 1px;
+    width: stretch;
+    height: auto;
+    background: #cccac9;
+    opacity: .8;
+}
+
+.question-card {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color:rgb(15, 14, 15);
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 2px black solid;
+    vertical-align: top;
+    overflow-y: scroll;
+    background-size: 2000px;
+    height: 200px;
+    width: 300px;
+    box-shadow: 9px 6px rgb(48, 49, 48);
+    border-radius: 10px;
+}
+
+.correct-answer {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 2px black solid;
+    vertical-align: top;
+    overflow-y: scroll;
+    background-size: 2000px;
+    height: 200px;
+    width: 300px;
+    box-shadow: 9px 6px rgb(48, 49, 48);
+    background-color: rgb(99, 180, 17);
+    border-radius: 10px;
+}
+
+.wrong-answer {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 2px black solid;
+    vertical-align: top;
+    overflow-y: scroll;
+    background-size: 2000px;
+    height: 200px;
+    width: 300px;
+    box-shadow: 9px 6px rgb(48, 49, 48);
+    background-color: rgb(226, 26, 59);
+    border-radius: 10px;
+}
+
+#results {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+    font-display: bold;
+    color: rgb(15, 14, 15);
+}
