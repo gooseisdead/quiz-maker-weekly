@@ -20,19 +20,20 @@ h1 {
 }
 
 .category {
+    color: black;
+    font-size: 18px;
     font-family: cursive;
     text-decoration: underline;
 }
 
 .question {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 3px;
     padding: 5px;
 }
 
 .answers {
-    margin-bottom: 2px;
     text-align: left;
     display: inline-block;
 }
@@ -52,6 +53,7 @@ button {
 	cursor: pointer;
 	margin-bottom: 20px;
 }
+
 button:hover{
     color:rgb(252, 249, 250);
     border-style: 300px;
@@ -88,10 +90,10 @@ button:hover{
     margin-right: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
-    border: 2px black solid;
+    border: 1px black solid;
     height: 200px;
     width: 300px;
-    box-shadow: 9px 6px rgb(48, 49, 48);
+    box-shadow: 6px 3px rgb(48, 49, 48);
     border-radius: 10px;
 }
 
@@ -104,12 +106,9 @@ button:hover{
     margin-bottom: 10px;
     margin-top: 20px;
     border: 2px black solid;
-    vertical-align: top;
-    overflow-y: scroll;
-    background-size: 2000px;
     height: 200px;
     width: 300px;
-    box-shadow: 9px 6px rgb(48, 49, 48);
+    box-shadow: 9px 6px rgb(34, 138, 34);
     background-color: rgb(99, 180, 17);
     border-radius: 10px;
 }
@@ -123,12 +122,9 @@ button:hover{
     margin-bottom: 10px;
     margin-top: 20px;
     border: 2px black solid;
-    vertical-align: top;
-    overflow-y: scroll;
-    background-size: 2000px;
     height: 200px;
     width: 300px;
-    box-shadow: 9px 6px rgb(48, 49, 48);
+    box-shadow: 9px 6px rgb(167, 3, 38);
     background-color: rgb(226, 26, 59);
     border-radius: 10px;
 }
