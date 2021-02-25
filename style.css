@@ -9,11 +9,13 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    background-color: rgb(25, 30, 32);
+    color: black;
+    background-color: rgb(252, 249, 250);
     height: 48px;
     width: auto;
-    margin-left: 135px;
-    margin-right: 135px;
+    margin-left: 285px;
+    margin-right: 285px;
+    border-style: solid;
     border-radius: 15px;
 }
 
@@ -80,15 +82,13 @@ button:hover{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
     color:rgb(15, 14, 15);
+    background-color: rgb(252, 249, 250);
     display: inline-block;
     position: relative;
     margin-right: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
     border: 2px black solid;
-    vertical-align: top;
-    overflow-y: scroll;
-    background-size: 2000px;
     height: 200px;
     width: 300px;
     box-shadow: 9px 6px rgb(48, 49, 48);
@@ -139,3 +139,5 @@ button:hover{
     font-display: bold;
     color: rgb(15, 14, 15);
 }
+
+

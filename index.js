@@ -8,7 +8,7 @@
 
             answerArray.push(
               `<label>
-                <input type="radio" name="question${questionNumber}" value="${letter}">
+                <input type="radio" class="radio" name="question${questionNumber}" value="${letter}">
                 ${listQuestion.answers[letter]}
               </label>`
             );
