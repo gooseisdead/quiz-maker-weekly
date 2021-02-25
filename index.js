@@ -50,7 +50,35 @@
         }
       });
 
-      resultsContainer.innerHTML = `${numCorrect} / ${quizQuestions.length}`;
+      if (numCorrect === 0) {
+        resultsContainer.innerHTML = `${numCorrect} / ${quizQuestions.length}
+                                      <p class="comeback">You've had too much to drink</p>`;
+      } else if (numCorrect === 1) {
+        resultsContainer.id = "results1"
+        resultsContainer.innerHTML = `${numCorrect} / ${quizQuestions.length}
+                                      <p class="comeback">I know who to ask if I need to know that one thing.</p>`;
+      } else if (numCorrect === 2) {
+        resultsContainer.id = "results2"
+        resultsContainer.innerHTML = `${numCorrect} / ${quizQuestions.length}
+                                      <p class="comeback">How many fingers am I holding up? Two...</p>`;
+      } else if (numCorrect === 3) {
+        resultsContainer.id = "results3"
+        resultsContainer.innerHTML = `${numCorrect} / ${quizQuestions.length}
+                                      <p class="comeback">50/50...You're either halfway too drunk, or halfway too sober.</p>`;
+      } else if (numCorrect === 4) {
+        resultsContainer.id = "results4"
+        resultsContainer.innerHTML = `${numCorrect} / ${quizQuestions.length}
+                                      <p class="comeback">You're an above-average pubster.</p>`;
+      } else if (numCorrect === 5) {
+        resultsContainer.id = "results5"
+        resultsContainer.innerHTML = `${numCorrect} / ${quizQuestions.length}
+                                      <p class="comeback">There are many ingredients in the cocktail of your brain.</p>`;
+      } else {
+        resultsContainer.id = "results6"
+        resultsContainer.innerHTML = `${numCorrect} / ${quizQuestions.length}
+                                      <p class="comeback">Didn't spill a drop! Get this pubster another!</p>`;
+      } 
+      
     }
 
     const quizContainer = document.getElementById('quiz-card');
