@@ -7,7 +7,6 @@ body {
 }
 
 h1 {
-    /* display: flex; */
     position:relative;
     justify-content: center;
     color: black;
@@ -119,7 +118,7 @@ button:hover{
     height: 208px;
     width: 300px;
     box-shadow: 6px 3px rgb(48, 49, 48);
-    background-color: rgb(99, 180, 17);
+    background-color: rgb(155, 219, 125);
     border-radius: 10px;
 }
 
@@ -136,7 +135,7 @@ button:hover{
     height: 208px;
     width: 300px;
     box-shadow: 6px 3px rgb(48, 49, 48);
-    background-color: rgb(226, 26, 59);
+    background-color: rgb(192, 87, 101);
     border-radius: 10px;
 }
 
@@ -169,14 +168,13 @@ button:hover{
     user-select: none;
 }
 
- /* Hide the browser's default radio button */
- .answer-container input {
+.answer-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  }
-  /* Create a custom radio button */
-  .checkmark {
+}
+
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -184,27 +182,26 @@ button:hover{
     width: 20px;
     background-color: #eeeeee;
     border-radius: 50%;
-  }
-  
-  .answer-container:hover input ~ .checkmark {
-    content: "🍺";
-    background-color: #f7ae41;
-  }
+}
  
-  .checkmark:after {
+.answer-container:hover input ~ .checkmark {
+    background-color: #e6c99f;
+}
+
+.checkmark:after {
     content: "🍺";
     position: relative;
     display: none;
-  }
+}
 
-  .answer-container input:checked ~ .checkmark:after {
-    display:block;
-  }
+.answer-container input:checked ~ .checkmark:after {
+   display:block;
+}
 
-  .answers-after {
-    color:rgb(253, 252, 250);
-    text-align: left;
-    display: inline-block;
+ .answers-after {
+   color:rgb(253, 252, 250);
+   text-align: left;
+   display: inline-block;
 }
 
 .answers-after label {
@@ -214,12 +211,20 @@ button:hover{
 
 .category-after {
     background: #fdfcfa;
-    border-radius: 5px;
+    border-radius: 7px;
     font-size: 23px;
     color:rgb(8, 8, 8);
     font-display: bold;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: underline;
+}
+
+.show-off {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-display: bold;
+    position:relative;
+    justify-content: center;
 }
 
 
