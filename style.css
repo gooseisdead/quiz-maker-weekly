@@ -1,11 +1,7 @@
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 14px;
-    letter-spacing: 0.02em;
     text-align: center;
-    padding: 1px;
-    width: stretch;
-    height: auto;
     background-image: url("https://images.all-free-download.com/images/graphiclarge/a_glass_of_beer_closeup_picture_167081.jpg");
     background-size: 1480px;
     background-position-y: -380px;
@@ -22,18 +18,19 @@ body {
     color: black;
     background-color: rgb(252, 249, 250);
     height: auto;
+    width: auto;
     border-style: solid;
-    border-radius: 15px;
+    border-radius: 50px 50px 30px 30px;
     cursor: pointer;
 }
 
 .category {
     background: #e4be56;
-    border-radius: 8px;
+    border-radius: 20px 20px 50px 50px;
+    border-style: solid;
     font-size: 23px;
     font-display: bold;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: underline;
 }
 
 .question {
@@ -67,32 +64,17 @@ button {
     transition: background 0.5s;
 }
 
-@media(hover: hover) and (pointer: fine) {
-    button:hover {
-        background: #e7c157 radial-gradient(circle, transparent 1%,#e7c157 1%) center/15000%;
-    }
-}
-
-button:active {
-    background-color: rgb(247, 241, 243);
-    background-size: 100%;
-    transition: background 0s;
-}
-
 .quiz-container {
     display: flex;
     position: relative;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .question-card {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 13px;
     color:rgb(15, 14, 15);
-    background-color: rgb(252, 249, 250);
     background-image: url("https://images.all-free-download.com/images/graphiclarge/a_glass_of_beer_closeup_picture_167081.jpg");
     background-size: 600px;
     background-position-y: -10px;
@@ -101,10 +83,8 @@ button:active {
     margin-right: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
-    border: 1px black solid;
     height: 208px;
     width: 300px;
-    box-shadow: 6px 3px rgb(48, 49, 48);
     border-radius: 10px;
 }
 
@@ -117,10 +97,9 @@ button:active {
     margin-right: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
-    border: 2px black solid;
+    border: 1px black solid;
     height: 208px;
     width: 300px;
-    box-shadow: 6px 3px rgb(48, 49, 48);
     background-color: rgb(155, 219, 125);
     border-radius: 10px;
 }
@@ -134,10 +113,9 @@ button:active {
     margin-right: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
-    border: 2px black solid;
+    border: 1px black solid;
     height: 208px;
     width: 300px;
-    box-shadow: 6px 3px rgb(48, 49, 48);
     background-color: rgb(192, 87, 101);
     border-radius: 10px;
 }
@@ -373,12 +351,12 @@ button:active {
 
 .category-after {
     background: #fdfcfa;
-    border-radius: 7px;
+    color:black;
+    border-radius: 20px 20px 50px 50px;
+    border-style: solid;
     font-size: 23px;
-    color:rgb(8, 8, 8);
     font-display: bold;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: underline;
 }
 
 .show-off {
