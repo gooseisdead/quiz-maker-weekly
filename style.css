@@ -60,17 +60,32 @@ button {
 	border-style:solid;
     border-color: rgb(39, 36, 36);
 	border-radius: 15px;
-	padding: 6px;
+	padding: 8px;
 	cursor: pointer;
-}
+    background-position: center;
+    transition: background 0.5s;
+  }
+  /* button:hover {
+    background: #e7c157 radial-gradient(circle, transparent 1%, #1b1b1a 1%) center/15000%;
+  }
+  button:active {
+    background-color: rgb(22, 19, 20);
+    background-size: 100%;
+    transition: background 0s;
+} */
 
-button:hover{
-    color:rgb(252, 249, 250);
-    cursor: pointer;
-    border-style: 300px;
-    border-color: rgb(223, 216, 216);
-    background-color: rgb(18, 20, 20);
-}
+.ripple {
+    background-position: center;
+    transition: background 0.5s;
+  }
+  .ripple:hover {
+    background: #e7c157 radial-gradient(circle, transparent 1%, #e7c157 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color:  rgb(252, 249, 250);
+    background-size: 100%;
+    transition: background 0s;
+  }
 
 .quiz-container {
     display: flex;
