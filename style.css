@@ -55,8 +55,11 @@ h1 {
 }
 
 @media(hover: hover) and (pointer: fine) {
-    nav a:hover {
-        background: yellow;
+    button:hover{
+        color:rgb(252, 249, 250);
+        border-style: 300px;
+        border-color: rgb(223, 216, 216);
+        background-color: rgb(18, 20, 20);
     }
 }
 
@@ -70,12 +73,6 @@ button {
 	cursor: pointer;
 }
 
-button:hover{
-    color:rgb(252, 249, 250);
-    border-style: 300px;
-    border-color: rgb(223, 216, 216);
-	background-color: rgb(18, 20, 20);
-}
 
 .quiz-container {
     display: flex;
