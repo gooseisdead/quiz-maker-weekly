@@ -16,7 +16,7 @@ body {
     margin-right: 100px;
 }
 
-h1 {
+.quiz-head {
     position: relative;
     justify-content: center;
     color: black;
@@ -64,28 +64,19 @@ button {
 	cursor: pointer;
     background-position: center;
     transition: background 0.5s;
-  }
-  /* button:hover {
-    background: #e7c157 radial-gradient(circle, transparent 1%, #1b1b1a 1%) center/15000%;
-  }
-  button:active {
-    background-color: rgb(22, 19, 20);
-    background-size: 100%;
-    transition: background 0s;
-} */
+}
 
-.ripple {
-    background-position: center;
-    transition: background 0.9s;
-  }
-  .ripple:hover {
-    background: #e7c157 radial-gradient(circle, transparent 1%, #e7c157 1%) center/15000%;
-  }
-  .ripple:active {
-    background-color:  rgb(153, 121, 132);
+@media(hover: hover) and (pointer: fine) {
+    button:hover {
+        background: #e7c157 radial-gradient(circle, transparent 1%,#e7c157 1%) center/15000%;
+    }
+}
+
+button:active {
+    background-color: rgb(247, 241, 243);
     background-size: 100%;
     transition: background 0s;
-  }
+}
 
 .quiz-container {
     display: flex;
