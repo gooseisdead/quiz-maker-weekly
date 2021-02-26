@@ -24,6 +24,7 @@ body {
     height: auto;
     border-style: solid;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .category {
